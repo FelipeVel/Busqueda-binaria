@@ -26,9 +26,9 @@ def binaria (vec, izq, der, llave, c, cont):
         c[cont] += 1
         return mit
     elif vec[mit] > llave:
-        binaria(vec, izq, mit-1, llave, c, cont)
+        return binaria(vec, izq, mit-1, llave, c, cont)
     else:
-        binaria(vec, mit+1, der, llave, c, cont)
+        return binaria(vec, mit+1, der, llave, c, cont)
         
     c[0] += 2
     c[cont] += 2
